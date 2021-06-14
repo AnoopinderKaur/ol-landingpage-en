@@ -763,7 +763,7 @@
 
       .tapestry-container {
         width: 50em;
-        height: 20rem;
+        height: 20.5rem;
 
       }
 
@@ -772,7 +772,7 @@
         height: 15rem;
         padding: 0.25rem;
         object-fit: cover;
-        top: 1rem;
+        top: 3rem;
         left: 1rem;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
