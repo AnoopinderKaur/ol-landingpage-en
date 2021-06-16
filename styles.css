@@ -227,8 +227,6 @@
 
     /* RIW styles */
     .riw-jumbotron {
-      background-color: #3F2A55;
-      color: #fefefe;
       padding: 1rem;
       margin: 0;
     }
@@ -306,27 +304,22 @@
 
     /* our products section*/
     .product-list {
-      background-color: #CBCBCB;
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 0.5fr 0.25fr;
-      grid-template-columns: 0.5fr 0.25fr 0.25fr 0.5fr;
-      -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      column-gap: 0.25rem;
-      row-gap: 0;
-      justify-items: center;
-      align-items: center;
-      justify-content: center;
+      background-color: #e9ecef;
       padding: 0.5rem;
+
     }
 
     .riw-btn {
       background-color: #3F2A56;
       color: #fefefe;
-      width: 20em;
+      width: 22em;
       height: auto;
-      margin: 2em;
+      margin: 1rem 1rem;
+      left: 5em;
+    }
+
+    .dropdown-menu a.dropdown-item {
+      white-space: normal;
     }
 
     .riw-btn:hover {
@@ -344,51 +337,10 @@
       color: #fefefe;
     }
 
-    .riw-grid-1 {
-      grid-column: 1/2;
-      grid-row: 1/1;
-      justify-self: start;
-      margin: 0 1.75em;
-    }
-
-    .riw-grid-2 {
-      grid-column: 1/2;
-      grid-row: 2/2;
-    }
-
-    .riw-grid-3 {
-      grid-column: 1/2;
-      grid-row: 3/3;
-    }
-
-    .riw-grid-4 {
-      grid-column: 1/2;
-      grid-row: 4/4;
-    }
-
-    .riw-grid-5 {
-      grid-column: 1/2;
-      grid-row: 5/5;
-    }
-
-    .riw-grid-6 {
-      grid-column: 1/2;
-      grid-row: 6/6;
-    }
-
-    .riw-grid-7 {
-      grid-column: 1/2;
-      grid-row: 7/7;
-    }
-
-    .riw-grid-1 h2 {
-      margin-top: 1rem;
-    }
-
     /* placemat */
     .placemat-container {
-      width: 22em;
-      height: 19rem;
+      min-width: 22em;
+      min-height: 19rem;
       position: relative;
       left: 50%;
       top: 50%;
@@ -406,8 +358,8 @@
     .placemat-container img {
       position: absolute;
       top: 0.15rem;
-      width: 100%;
-      height: 10rem;
+      max-width: 100%;
+      min-height: 10rem;
       object-fit: cover;
     }
 
@@ -451,8 +403,8 @@
     .tapestry-container img {
       position: absolute;
       top: 0.15rem;
-      width: 100%;
-      height: 10rem;
+      max-width: 100%;
+      min-height: 10rem;
       object-fit: cover;
     }
 
@@ -478,6 +430,95 @@
     .proper-hr {
       position: relative;
       top: 6rem;
+    }
+
+    /* Placemat */
+    .placemat-container {
+      min-width: 22em;
+      min-height: 19rem;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 20%);
+      margin-bottom: 1rem;
+      border: 1px solid #000;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .placemat-container:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .placemat-container img {
+      position: absolute;
+      top: 0.15rem;
+      max-width: 100%;
+      min-height: 10rem;
+      object-fit: cover;
+    }
+
+
+    .placemat-container h3 {
+      position: absolute;
+      padding-left: 0.75rem;
+      top: 10rem;
+    }
+
+    .placemat-container p {
+      position: absolute;
+      padding-left: 0.75rem;
+      top: 12.25rem;
+    }
+
+    .placemat-container a.event-link {
+      position: absolute;
+      padding-left: 0.75rem;
+      top: 15rem;
+    }
+
+    /* Tapestry*/
+    .tapestry-container {
+      width: 22em;
+      height: 19rem;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 20%);
+      margin-bottom: 1rem;
+      border: 1px solid #000;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .tapestry-container:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .tapestry-container img {
+      position: absolute;
+      top: 0.15rem;
+      max-width: 100%;
+      min-height: 10rem;
+      object-fit: cover;
+    }
+
+    h3.tapestry-paragraph {
+      position: absolute;
+      padding-left: 0.75rem;
+      top: 10rem;
+    }
+
+    p.tapestry-paragraph {
+      position: absolute;
+      padding-left: 0.75rem;
+      top: 12.25rem;
+    }
+
+    .tapestry-paragraph .event-link {
+      position: absolute;
+      padding-left: 0.75rem;
+      top: 15rem;
     }
 
 
@@ -614,115 +655,6 @@
 
 
     @media only screen and (min-width: 768px) {
-      .product-list {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 0.5fr 0.25fr 0.25fr 0.5fr;
-        grid-template-columns: 0.5fr 0.25fr 0.25fr 0.5fr;
-        -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        column-gap: 1rem;
-        row-gap: 0.25rem;
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        padding: 0.5rem;
-      }
-
-      .riw-grid-1 {
-        -ms-grid-column: 2;
-        -ms-grid-column-span: 4;
-        grid-column: 2/4;
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 2;
-        grid-row: 1/2;
-        justify-self: start;
-        margin-left: 1em;
-      }
-
-      .riw-grid-2 {
-        width: 105%;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 2;
-        grid-column: 2/2;
-        -ms-grid-row: 2;
-        -ms-grid-row-span: 1;
-        grid-row: 2/3;
-      }
-
-      .riw-grid-3 {
-        width: 105%;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 2;
-        grid-column: 3/3;
-        -ms-grid-row: 2;
-        -ms-grid-row-span: 1;
-        grid-row: 2/3;
-      }
-
-      .riw-grid-4 {
-        width: 105%;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 2;
-        grid-column: 2/2;
-        grid-row: 3/4;
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 1;
-      }
-
-      .riw-grid-5 {
-        width: 105%;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 2;
-        grid-column: 3/3;
-        grid-row: 3/4;
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 1;
-      }
-
-      .riw-grid-6 {
-        width: 105%;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 2;
-        grid-column: 2/2;
-        grid-row: 4/5;
-        -ms-grid-row: 4;
-        -ms-grid-row-span: 1;
-      }
-
-      .riw-grid-7 {
-        width: 105%;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 2;
-        grid-column: 3/3;
-        grid-row: 4/5;
-        -ms-grid-row: 4;
-        -ms-grid-row-span: 1;
-      }
-
-      .riw-grid-2 .dropdown-toggle {
-        padding: 0.75rem 0;
-      }
-
-      .riw-grid-3 .dropdown-toggle {
-        padding: 0.75rem 0;
-      }
-
-      .riw-grid-4 .dropdown-toggle {
-        padding: 0.75rem 0;
-      }
-
-      .riw-grid-5 .dropdown-toggle {
-        padding: 0.75rem 0;
-      }
-
-      .riw-grid-6 .dropdown-toggle {
-        padding: 0.75rem 0;
-      }
-
-      .riw-grid-7 .dropdown-toggle {
-        padding: 0.75rem 0;
-      }
 
       .placemat-container {
         width: 50em;
@@ -730,8 +662,8 @@
       }
 
       .placemat-container img {
-        width: 20rem;
-        height: 15rem;
+        max-width: 20rem;
+        min-height: 15rem;
         padding: 0.25rem;
         object-fit: cover;
         top: 1rem;
@@ -768,8 +700,8 @@
       }
 
       .tapestry-container img {
-        width: 20rem;
-        height: 15rem;
+        max-width: 20rem;
+        min-height: 15rem;
         padding: 0.25rem;
         object-fit: cover;
         top: 3rem;
@@ -817,6 +749,25 @@
 
 
     @media only screen and (min-width: 992px) {
+
+      /* Tapestry*/
+
+
+      h3.tapestry-paragraph {
+        position: absolute;
+        padding-left: 0.75rem;
+      }
+
+      p.tapestry-paragraph {
+        position: absolute;
+        padding-left: 0.75rem;
+      }
+
+      .tapestry-paragraph .event-link {
+        position: absolute;
+        padding-left: 0.75rem;
+      }
+
       .events {
         transform: translate(-23rem, 100px);
       }
@@ -1048,8 +999,6 @@
 
       /* RIW styles */
       .riw-jumbotron {
-        background-color: #3F2A55;
-        color: #fefefe;
         padding: 1rem;
         margin: 0;
       }
@@ -1126,26 +1075,11 @@
       }
 
       /* our products section*/
-      .product-list {
-        background-color: #CBCBCB;
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 0.5fr 0.25fr;
-        grid-template-columns: 0.5fr 0.25fr 0.25fr 0.5fr;
-        -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        column-gap: 0.25rem;
-        row-gap: 0;
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        padding: 0.5rem;
-      }
-
       .riw-btn {
         background-color: #3F2A56;
         color: #fefefe;
-        width: 20em;
+        width: 25em;
+        /* max-width: 25em; */
         height: auto;
         margin: 2em;
       }
@@ -1165,51 +1099,10 @@
         color: #fefefe;
       }
 
-      .riw-grid-1 {
-        grid-column: 1/2;
-        grid-row: 1/1;
-        justify-self: start;
-        margin: 0 1.75em;
-      }
-
-      .riw-grid-2 {
-        grid-column: 1/2;
-        grid-row: 2/2;
-      }
-
-      .riw-grid-3 {
-        grid-column: 1/2;
-        grid-row: 3/3;
-      }
-
-      .riw-grid-4 {
-        grid-column: 1/2;
-        grid-row: 4/4;
-      }
-
-      .riw-grid-5 {
-        grid-column: 1/2;
-        grid-row: 5/5;
-      }
-
-      .riw-grid-6 {
-        grid-column: 1/2;
-        grid-row: 6/6;
-      }
-
-      .riw-grid-7 {
-        grid-column: 1/2;
-        grid-row: 7/7;
-      }
-
-      .riw-grid-1 h2 {
-        margin-top: 1rem;
-      }
-
       /* placemat */
       .placemat-container {
-        width: 22em;
-        height: 19rem;
+        min-width: 22em;
+        min-height: 19rem;
         position: relative;
         left: 50%;
         top: 50%;
@@ -1228,7 +1121,7 @@
         position: absolute;
         top: 0.15rem;
         width: 100%;
-        height: 10rem;
+        min-height: 10rem;
         object-fit: cover;
       }
 
@@ -1236,25 +1129,25 @@
       .placemat-container h3 {
         position: absolute;
         padding-left: 0.75rem;
-        top: 10rem;
+        /* top: 10rem; */
       }
 
       .placemat-container p {
         position: absolute;
         padding-left: 0.75rem;
-        top: 12.25rem;
+        /* top: 12.25rem; */
       }
 
       .placemat-container a.event-link {
         position: absolute;
         padding-left: 0.75rem;
-        top: 15rem;
+        /* top: 15rem; */
       }
 
       /* Tapestry*/
       .tapestry-container {
-        width: 22em;
-        height: 19rem;
+        min-width: 22em;
+        min-height: 19rem;
         position: relative;
         left: 50%;
         top: 50%;
@@ -1271,7 +1164,6 @@
 
       .tapestry-container img {
         position: absolute;
-        top: 0.15rem;
         width: 100%;
         height: 10rem;
         object-fit: cover;
@@ -1280,19 +1172,19 @@
       h3.tapestry-paragraph {
         position: absolute;
         padding-left: 0.75rem;
-        top: 10rem;
+        /* top: 10rem; */
       }
 
       p.tapestry-paragraph {
         position: absolute;
         padding-left: 0.75rem;
-        top: 12.25rem;
+        /* top: 12.25rem; */
       }
 
       .tapestry-paragraph .event-link {
         position: absolute;
         padding-left: 0.75rem;
-        top: 15rem;
+        /* top: 15rem; */
       }
 
       .proper-hr {
@@ -1303,13 +1195,12 @@
 
       /*cards*/
 
-
       .events {
         position: relative;
         top: 50%;
         left: 50%;
-        /* transform: translate(-50%, 50%); */
-        transform: translate(-45%, 100px);
+
+        transform: translate(-23rem, 100px);
         margin: 1rem 0 0 0;
       }
 
@@ -1376,7 +1267,7 @@
         margin: 2rem 1.25rem;
         align-self: flex-start;
         position: relative;
-        left: 1em;
+        left: 13em;
       }
 
       .gc-campus {
@@ -1432,217 +1323,4 @@
         color: #3F2A55;
       }
 
-
-      @media only screen and (min-width: 768px) {
-        .product-list {
-          display: -ms-grid;
-          display: grid;
-          -ms-grid-columns: 0.5fr 0.25fr 0.25fr 0.5fr;
-          grid-template-columns: 0.5fr 0.25fr 0.25fr 0.5fr;
-          -ms-grid-rows: 1fr 1fr 1fr 1fr;
-          grid-template-rows: 1fr 1fr 1fr 1fr;
-          column-gap: 1rem;
-          row-gap: 0.25rem;
-          justify-items: center;
-          align-items: center;
-          justify-content: center;
-          padding: 0.5rem;
-        }
-
-        .riw-grid-1 {
-          -ms-grid-column: 2;
-          -ms-grid-column-span: 4;
-          grid-column: 2/4;
-          -ms-grid-row: 1;
-          -ms-grid-row-span: 2;
-          grid-row: 1/2;
-          justify-self: start;
-          margin-left: 1em;
-        }
-
-        .riw-grid-2 {
-          width: 105%;
-          -ms-grid-column: 1;
-          -ms-grid-column-span: 2;
-          grid-column: 2/2;
-          -ms-grid-row: 2;
-          -ms-grid-row-span: 1;
-          grid-row: 2/3;
-        }
-
-        .riw-grid-3 {
-          width: 105%;
-          -ms-grid-column: 3;
-          -ms-grid-column-span: 2;
-          grid-column: 3/3;
-          -ms-grid-row: 2;
-          -ms-grid-row-span: 1;
-          grid-row: 2/3;
-        }
-
-        .riw-grid-4 {
-          width: 105%;
-          -ms-grid-column: 1;
-          -ms-grid-column-span: 2;
-          grid-column: 2/2;
-          grid-row: 3/4;
-          -ms-grid-row: 3;
-          -ms-grid-row-span: 1;
-        }
-
-        .riw-grid-5 {
-          width: 105%;
-          -ms-grid-column: 3;
-          -ms-grid-column-span: 2;
-          grid-column: 3/3;
-          grid-row: 3/4;
-          -ms-grid-row: 3;
-          -ms-grid-row-span: 1;
-        }
-
-        .riw-grid-6 {
-          width: 105%;
-          -ms-grid-column: 1;
-          -ms-grid-column-span: 2;
-          grid-column: 2/2;
-          grid-row: 4/5;
-          -ms-grid-row: 4;
-          -ms-grid-row-span: 1;
-        }
-
-        .riw-grid-7 {
-          width: 105%;
-          -ms-grid-column: 3;
-          -ms-grid-column-span: 2;
-          grid-column: 3/3;
-          grid-row: 4/5;
-          -ms-grid-row: 4;
-          -ms-grid-row-span: 1;
-        }
-
-        .riw-grid-2 .dropdown-toggle {
-          padding: 0.75rem 0;
-        }
-
-        .riw-grid-3 .dropdown-toggle {
-          padding: 0.75rem 0;
-        }
-
-        .riw-grid-4 .dropdown-toggle {
-          padding: 0.75rem 0;
-        }
-
-        .riw-grid-5 .dropdown-toggle {
-          padding: 0.75rem 0;
-        }
-
-        .riw-grid-6 .dropdown-toggle {
-          padding: 0.75rem 0;
-        }
-
-        .riw-grid-7 .dropdown-toggle {
-          padding: 0.75rem 0;
-        }
-
-        .placemat-container {
-          width: 50em;
-          height: 17rem;
-        }
-
-        .placemat-container img {
-          width: 20rem;
-          height: 15rem;
-          padding: 0.25rem;
-          object-fit: cover;
-          top: 1rem;
-          left: 1rem;
-          border-top-left-radius: 0;
-          border-top-right-radius: 0;
-        }
-
-        .placemat-container h3 {
-          padding: 0 1rem;
-          margin: 1rem;
-          top: -0.75rem;
-          left: 21rem;
-        }
-
-        .placemat-container p {
-          margin: 0 1rem;
-          padding: 1rem;
-          top: 5.5rem;
-          left: 21rem;
-        }
-
-        .placemat-container a.event-link {
-          padding: 0 1rem;
-          margin: 1rem;
-          top: 13rem;
-          left: 21rem;
-        }
-
-        .tapestry-container {
-          width: 50em;
-          height: 20.5rem;
-
-        }
-
-        .tapestry-container img {
-          width: 20rem;
-          height: 15rem;
-          padding: 0.25rem;
-          object-fit: cover;
-          top: 3rem;
-          left: 1rem;
-          border-top-left-radius: 0;
-          border-top-right-radius: 0;
-        }
-
-        h3.tapestry-paragraph {
-          padding: 0 1rem;
-          margin: 1rem;
-          top: 0.25rem;
-          left: 12em;
-        }
-
-        p.tapestry-paragraph {
-          margin: 0 1rem;
-          padding: 1rem;
-          left: 21rem;
-        }
-
-        p.tapestry-paragraph:nth-of-type(1) {
-          top: 2.75rem;
-        }
-
-        p.tapestry-paragraph:nth-of-type(2) {
-          top: 7.5rem;
-        }
-
-        p.tapestry-paragraph:nth-of-type(3) {
-          top: 10.75rem;
-        }
-
-        .tapestry-paragraph .event-link {
-          padding: 0 1rem;
-          margin: 1rem;
-          top: 6rem;
-          left: -1.2rem;
-        }
-
-        .more-resources {
-          left: 2.5em;
-        }
-      }
-
-
-      @media only screen and (min-width: 992px) {
-        .events {
-          transform: translate(-23rem, 100px);
-        }
-
-        .more-resources {
-          left: 13em;
-        }
-      }
     }
