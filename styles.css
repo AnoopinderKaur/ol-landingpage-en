@@ -306,7 +306,16 @@
     .product-list {
       background-color: #e9ecef;
       padding: 0.5rem;
+    }
 
+    .product-content {
+      position: relative;
+      left: 9rem;
+    }
+
+    .product-body {
+      width: 80%;
+      margin-bottom: 0;
     }
 
     .riw-btn {
@@ -357,7 +366,7 @@
 
     .placemat-container img {
       position: absolute;
-      top: 0.15rem;
+      top: 1rem;
       max-width: 100%;
       min-height: 10rem;
       object-fit: cover;
@@ -452,7 +461,6 @@
 
     .placemat-container img {
       position: absolute;
-      top: 0.15rem;
       max-width: 100%;
       min-height: 10rem;
       object-fit: cover;
@@ -666,7 +674,6 @@
         min-height: 15rem;
         padding: 0.25rem;
         object-fit: cover;
-        top: 1rem;
         left: 1rem;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
@@ -1119,7 +1126,6 @@
 
       .placemat-container img {
         position: absolute;
-        top: 0.15rem;
         width: 100%;
         min-height: 10rem;
         object-fit: cover;
