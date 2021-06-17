@@ -609,6 +609,9 @@
     }
 
     .gc-campus img {
+      position: relative;
+      top: 30%;
+      left: 55%;
       width: 10rem;
       height: auto;
     }
@@ -627,6 +630,8 @@
 
     .school-logo a {
       color: #000;
+      position: relative;
+      left: 5%;
     }
 
     .school-logo a:hover {
@@ -637,6 +642,11 @@
     .school-logo img {
       width: 3rem;
       opacity: 1;
+    }
+
+    p.contact-us {
+      position: relative;
+      left: 20%;
     }
 
     .contact-us a {
