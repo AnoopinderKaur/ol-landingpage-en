@@ -324,7 +324,7 @@
       width: 22em;
       height: auto;
       margin: 1rem 1rem;
-      left: 5em;
+      /* left: 6em; this is breaking the design */
     }
 
     .dropdown-menu a.dropdown-item {
@@ -601,20 +601,17 @@
     }
 
     .more-resources {
-      order: 1;
-      margin: 2rem 1.25rem;
-      align-self: flex-start;
       position: relative;
-      left: 1em;
     }
 
     .gc-campus {
-      order: 2;
-      align-self: center;
-      margin: 1rem;
+      margin: 1rem 0;
     }
 
     .gc-campus img {
+      position: relative;
+      top: 30%;
+      left: 55%;
       width: 10rem;
       height: auto;
     }
@@ -624,9 +621,7 @@
     }
 
     .school-logo {
-      order: 3;
-      align-self: center;
-      margin: 1rem;
+      margin: 1rem 0;
     }
 
     .school-logo p {
@@ -634,12 +629,9 @@
     }
 
     .school-logo a {
-      display: -ms-flex;
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center;
-      text-decoration: none;
       color: #000;
+      position: relative;
+      left: 5%;
     }
 
     .school-logo a:hover {
@@ -652,8 +644,14 @@
       opacity: 1;
     }
 
+    p.contact-us {
+      position: relative;
+      left: 20%;
+    }
+
     .contact-us a {
       display: inline;
+      color: #000;
       text-decoration: underline;
     }
 
@@ -749,9 +747,6 @@
         left: -1.2rem;
       }
 
-      .more-resources {
-        left: 2.5em;
-      }
     }
 
 
@@ -779,9 +774,7 @@
         transform: translate(-23rem, 100px);
       }
 
-      .more-resources {
-        left: 13em;
-      }
+
 
       .responsive {
         width: 100%;
@@ -1085,10 +1078,7 @@
       .riw-btn {
         background-color: #3F2A56;
         color: #fefefe;
-        width: 25em;
-        /* max-width: 25em; */
         height: auto;
-        margin: 2em;
       }
 
       .riw-btn:hover {
@@ -1269,50 +1259,7 @@
       }
 
       .more-resources {
-        order: 1;
-        margin: 2rem 1.25rem;
-        align-self: flex-start;
-        position: relative;
         left: 13em;
-      }
-
-      .gc-campus {
-        order: 2;
-        align-self: center;
-        margin: 1rem;
-      }
-
-      .gc-campus img {
-        width: 10rem;
-        height: auto;
-      }
-
-      .gc-campus img:hover {
-        opacity: 0.8;
-      }
-
-      .school-logo {
-        order: 3;
-        align-self: center;
-        margin: 1rem;
-      }
-
-      .school-logo p {
-        font-weight: 600;
-      }
-
-      .school-logo a {
-        display: -ms-flex;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        text-decoration: none;
-        color: #000;
-      }
-
-      .school-logo a:hover {
-        color: #3F2A56;
-        text-decoration: underline;
       }
 
       .school-logo img {
