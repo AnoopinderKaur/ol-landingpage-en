@@ -324,7 +324,7 @@
       width: 22em;
       height: auto;
       margin: 1rem 1rem;
-      left: 5em;
+      /* left: 6em; this is breaking the design */
     }
 
     .dropdown-menu a.dropdown-item {
@@ -1078,10 +1078,7 @@
       .riw-btn {
         background-color: #3F2A56;
         color: #fefefe;
-        width: 25em;
-        /* max-width: 25em; */
         height: auto;
-        margin: 2em;
       }
 
       .riw-btn:hover {
