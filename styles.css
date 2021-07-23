@@ -318,12 +318,23 @@
       margin-bottom: 0;
     }
 
+    .riw-dropdown {
+      position: relative;
+      left: 12rem;
+      width: 70%;
+    }
+
+    .riw-col {
+      max-width: 50% !important;
+      /* background: pink; */
+    }
+
     .riw-btn {
       background-color: #3F2A56;
       color: #fefefe;
       width: 22em;
       height: auto;
-      margin: 1rem 1rem;
+      margin: 1rem 0;
       /* left: 6em; this is breaking the design */
     }
 
